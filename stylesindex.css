@@ -1,0 +1,97 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+video {
+    width: 100%;
+    height: 98vh; /* Adjust the height as needed */
+    object-fit: cover;
+}
+
+#overlay {
+    position: relative;
+    margin-left: 90px;
+    margin-top: -280px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(96, 253, 5);
+    font-size: 66px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 0px;
+    white-space: nowrap;
+}
+
+.navigation-button {
+    position: absolute;
+    top: 30px;
+    color: rgb(39, 85, 235);
+    padding: 10px;
+    font-size: 34px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+#goToIndex {
+    left: 30px;
+}
+
+#goToAboutUs {
+    right: 400px;
+    font-size: 18px;
+}
+
+#goToProducts {
+    right: 250px;
+    font-size: 18px;
+}
+
+#goToContactUs {
+    right: 120px;
+    font-size: 18px;
+}
+
+#goToCareers {
+    right: 20px;
+    font-size: 18px;
+}
+
+#goToScroll {
+    top: 550px;
+    right: 660px;
+    font-size: 18px;
+}
+
+.navigation-button:hover {
+    color: #3ed119;
+}
+
+/* Media query for screens smaller than 600px (typical mobile devices) */
+@media only screen and (max-width: 600px) {
+    #overlay {
+        font-size: 8vw; /* Adjust as needed for mobile devices */
+    }
+
+    .navigation-button {
+        top: 5vw; /* Adjust as needed for mobile devices */
+        font-size: 3vw; /* Adjust as needed for mobile devices */
+    }
+
+    #goToAboutUs,
+    #goToProducts,
+    #goToContactUs,
+    #goToCareers,
+    #goToScroll {
+        right: auto;
+        left: 2vw; /* Adjust as needed for mobile devices */
+    }
+
+    video {
+        height: 30vh; /* Adjust the height for small screens */
+    }
+}
